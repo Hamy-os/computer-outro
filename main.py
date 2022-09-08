@@ -10,7 +10,7 @@ from ctypes import c_ulong
 from ctypes import POINTER
 from ctypes import byref
 # replace with your path
-webbrowser.open("C:/Users/hamza/Downloads/computer-outro-main/outro.mp3")
+webbrowser.open("outro.mp3")
 
 time.sleep(0.25)
 keyboard.press_and_release("windows + m")
