@@ -1,16 +1,23 @@
-import webbrowser
+# Packages necessary to run
 import time
 import subprocess
 import keyboard
 import os
+from pygame import mixer
 from ctypes import windll
 from ctypes import c_int
 from ctypes import c_uint
 from ctypes import c_ulong
 from ctypes import POINTER
 from ctypes import byref
-# replace with your path
-webbrowser.open("C:/Users/hamza/Downloads/computer-outro-main/outro.mp3")
+
+# Find and play sound (if in the same folder as this file)
+outrosound = os.path.join(os.getcwd(), 'outro.mp3')
+
+mixer.init()
+mixer.music.load(outrosound)
+mixer.music.play()
+
 
 time.sleep(0.25)
 keyboard.press_and_release("windows + m")
