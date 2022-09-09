@@ -5,3 +5,4 @@ ECHO REMOVING INSTALLER EXECUTABLE && del python-3.10.5-amd64.exe
 COLOR 02 && ECHO DONE && ECHO PYTHON (3.10.5) INSTALLED && START .
 python -m pip install -r requirements.txt
 PAUSE && COLOR 07 && EXIT
+python main.py
