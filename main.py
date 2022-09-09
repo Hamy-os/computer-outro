@@ -3,6 +3,7 @@ import time
 import subprocess
 import keyboard
 import os
+import sys
 from pygame import mixer
 from ctypes import windll
 from ctypes import c_int
@@ -13,6 +14,13 @@ from ctypes import byref
 
 # Find and play sound (if in the same folder as this file)
 outrosound = os.path.join(os.getcwd(), 'outro.mp3')
+
+if(os.path.exists(outrosound) == False):
+    outrosound = os.path.expanduser("~")+"/Downloads/"
+    
+    if(os.path.exists(outrosound) == False):
+        sys.exit("outro.mp3 not found!")
+
 mixer.init()
 mixer.music.load(outrosound)
 mixer.music.play()
