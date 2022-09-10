@@ -1,7 +1,8 @@
 # Packages necessary to run
-import time
-import subprocess
 import os
+import subprocess
+import time
+
 from pygame import mixer
 
 # Find and play sound (if in the same folder as this file)

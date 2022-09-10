@@ -1,7 +1,8 @@
 # download https://github.com/Hamy-os/computer-outro/raw/main/outro.mp3 and save it to the desktop
 
-import requests
 import os
+
+import requests
 
 outroURL = "https://github.com/Hamy-os/computer-outro/raw/main/outro.mp3"
 choice1URL = "https://github.com/Hamy-os/computer-outro/raw/main/fakebsod.exe"

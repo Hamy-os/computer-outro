@@ -1,8 +1,9 @@
 # Packages necessary to run
-import time
 import os
+import time
+from ctypes import POINTER, byref, c_int, c_uint, c_ulong, windll
+
 from pygame import mixer
-from ctypes import windll, c_int, c_uint, c_ulong, POINTER, byref
 
 # Find and play sound (if in the same folder as this file)
 outrosound = os.path.join(os.getcwd(), "outro.mp3")
