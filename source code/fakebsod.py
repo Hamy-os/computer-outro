@@ -1,11 +1,11 @@
-
 # Packages necessary to run
 import time
 import subprocess
 import os
 from pygame import mixer
+
 # Find and play sound (if in the same folder as this file)
-outrosound = os.path.join(os.getcwd(), 'outro.mp3')
+outrosound = os.path.join(os.getcwd(), "outro.mp3")
 mixer.init()
 mixer.music.load(outrosound)
 mixer.music.play()
