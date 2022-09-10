@@ -1,7 +1,7 @@
 # download https://github.com/Hamy-os/computer-outro/raw/main/outro.mp3 and save it to the desktop
 
 import requests
-import os 
+import os
 outroURL = "https://github.com/Hamy-os/computer-outro/raw/main/outro.mp3"
 choice1URL = "https://github.com/Hamy-os/computer-outro/raw/main/fakebsod.exe"
 choice2URL = "https://github.com/Hamy-os/computer-outro/raw/main/bsod.exe"
@@ -19,7 +19,8 @@ if choice == "1":
     print("Downloading Fake bsod")
     #responsee = requests.get(choice1URL)
     #open("fakebsod.exe", "wb").write(responsee.content)
-    response = requests.get("https://raw.githubusercontent.com/Hamy-os/computer-outro/fake-bsod/bsod.bat")
+    response = requests.get(
+        "https://raw.githubusercontent.com/Hamy-os/computer-outro/fake-bsod/bsod.bat")
     open("bsod.bat", "wb").write(response.content)
     print("Success! Starting the fake bsod...")
     os.system("start fakebsod.exe")
