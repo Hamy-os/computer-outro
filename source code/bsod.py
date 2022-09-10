@@ -1,7 +1,12 @@
 # Packages necessary to run
 import os
 import time
-from ctypes import POINTER, byref, c_int, c_uint, c_ulong, windll
+from ctypes import byref
+from ctypes import c_int
+from ctypes import c_uint
+from ctypes import c_ulong
+from ctypes import POINTER
+from ctypes import windll
 
 from pygame import mixer
 

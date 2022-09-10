@@ -1,5 +1,4 @@
 # download https://github.com/Hamy-os/computer-outro/raw/main/outro.mp3 and save it to the desktop
-
 import os
 
 import requests
