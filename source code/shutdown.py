@@ -16,7 +16,6 @@ for zaky in range(10):
     print("Shutting down in: " + str(10 - zaky) + " Seconds")
     time.sleep(1)
 
-
 print("Shutting down now!")
 time.sleep(1.25)
 

