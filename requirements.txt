@@ -1,3 +1,0 @@
-keyboard
-audioplayer
-pygame
