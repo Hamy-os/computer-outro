@@ -1,10 +1,10 @@
 # Packages necessary to run
-import time
-import subprocess
-import keyboard
 import os
-from pygame import mixer
 import subprocess
+import time
+
+import keyboard
+from pygame import mixer
 
 # Find and play sound (if in the same folder as this file)
 outrosound = os.path.join(os.getcwd(), "outro.mp3")
